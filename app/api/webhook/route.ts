@@ -4,14 +4,10 @@ import { NextResponse } from "next/server"
 
 import prismadb from "@/lib/prismadb"
 import { stripe } from "@/lib/stripe"
-// import { currentUser } from "@clerk/nextjs"
 
 export async function POST(req: Request) {
   const body = await req.text()
   const signature = headers().get("Stripe-Signature") as string
-  // const  user  = await currentUser();
-  // const mail = JSON.stringify(user?.emailAddresses[0].emailAddress)
-
 
   let event: Stripe.Event
 
@@ -39,7 +35,6 @@ export async function POST(req: Request) {
     await prismadb.userSubscription.create({
       data: {
         userId: session?.metadata?.userId,
-        mailId:"none",
         stripeSubscriptionId: subscription.id,
         stripeCustomerId: subscription.customer as string,
         stripePriceId: subscription.items.data[0].price.id,
