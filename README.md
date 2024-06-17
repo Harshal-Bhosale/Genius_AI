@@ -1,8 +1,7 @@
 
-# GenEd
+# Genius_AI
 
-GenED - the revolutionary platform that harnesses the power of artificial intelligence to create customized educational experiences. GenED is designed to empower learners, educators, and institutions by offering a seamless and personalized approach to course content generation..
-
+GENIUS offers a seamless and intuitive experience, allowing users to easily navigate the available AI tools, customize settings, and refine their outputs. The platform also provides educational resources and guidance to help users get the most out of the AI generation capabilities.
 
 
 
@@ -11,7 +10,7 @@ GenED - the revolutionary platform that harnesses the power of artificial intell
 Clone the project
 
 ```bash
-  git clone https://github.com/Harshal-Bhosale/GenEd.git
+  git clone https://github.com/Harshal-Bhosale/Genius_AI.git
 ```
 
 Go to the project directory
